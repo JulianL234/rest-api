@@ -7,15 +7,14 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.apache.commons.lang3.ArrayUtils;
-import org.springframework.stereotype.Component;
+import org.springframework.beans.factory.annotation.Value;
 
 public class BetriebsstelleService {
-	
-	static Map <String, Betriebsstelle> bsMap = new HashMap<>();
-	
+		
 	public Map<String, Betriebsstelle> createMapFromCSV() {
 		
-		String filePath = "C:/Users/Julian/Downloads/DBNetz-Betriebsstellenverzeichnis-Stand2021-10.csv";
+		String filePath = "../../../../resources/DBNetz-Betriebsstellenverzeichnis-Stand2021-10.csv";
+		Map <String, Betriebsstelle> bsMap = new HashMap<>();
 		String line;
 		boolean firstLine = true;
 		int indexOfName = -1;
@@ -51,3 +50,4 @@ public class BetriebsstelleService {
 	    return bsMap;
 	}
 }
+
