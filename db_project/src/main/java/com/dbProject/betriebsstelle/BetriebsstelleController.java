@@ -14,7 +14,7 @@ import org.springframework.web.server.ResponseStatusException;
 public class BetriebsstelleController {
 
 	private BetriebsstelleService bsService = new BetriebsstelleService();
-	Map<String, Betriebsstelle> bsMap = bsService.createMapFromCSV();
+	private Map<String, Betriebsstelle> bsMap = bsService.createMapFromCSV();
 	
 	@GetMapping(path="/betriebsstelle/{bsAbk}")
 	@ResponseStatus(code = HttpStatus.OK)
