@@ -6,7 +6,7 @@ Erstellen Sie ein Programm, das die Daten aus der CSV-Datei einliest und über e
 
 <h3> Beschreibung  </h3>
 Die Rest-Api liest Informationen bezüglich Betriebsstellen der DB mittels einer CSV Datei ein <br>
-und gibt den HTTP-Status sowie diese Informationen in JSON Format wieder.
+und gibt den HTTP-Status sowie die Informationen in JSON Format wieder.
 
 <h3> Ausführung  </h3>
 java -jar /path/db_project/rest-service.jar
