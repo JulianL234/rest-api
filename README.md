@@ -29,7 +29,7 @@ Die Rest-Api liest Informationen bezüglich Betriebsstellen der DB mittels einer
 und gibt den HTTP-Status sowie die Informationen in JSON Format wieder.
 
 <h3> Ausführung  </h3>
-java -jar /path/db_project/rest-service.jar
+java -jar /path/db_project/rest-service.jar <br>
 curl https://localhost:8080/betriebsstelle/{Abkürzung der Betriebsstelle} <br>
 
 Groß-/Kleinschreibung bei der Betriebsstelle unwichtig.
